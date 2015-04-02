@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  BXiOSExtensionDemo
 //
-//  Created by 彬潇 on 15/3/27.
+//  Created by 彬潇 on 15/3/22.
 //  Copyright (c) 2015年 彬潇. All rights reserved.
 //
 
@@ -36,10 +36,26 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    if ([url.scheme isEqualToString:@"iOSExtensionDeomContaingAPP"]) {
+        if ([url.host isEqualToString:@"finished"]) {
+//            NSNotificationCenter.defaultCenter()
+//            .postNotificationName(taskDidFinishedInWidgetNotification, object: nil)
+            NSDictionary *dic = @{@"openPage":url.host};
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"openContainingAppNotification" object:self userInfo:dic];
+        }
+        return YES;
+    }
+    return NO;
 }
 
 @end
