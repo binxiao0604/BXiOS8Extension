@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const kDisplayWeatherVC;
+extern NSString * const kDisplayImageVC;
+extern NSString * const kDisplayCameraVC;
+
 @interface ControlTodayViewDisplay : NSObject
 
 + (void)hideTodayView;

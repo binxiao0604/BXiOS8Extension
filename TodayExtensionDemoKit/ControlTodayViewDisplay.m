@@ -10,6 +10,11 @@
 #import <NotificationCenter/NotificationCenter.h>
 #import <ExtensionDemoKit/ExtensionDemoKit.h>
 
+NSString * const kDisplayWeatherVC = @"TodayExtensionOpenWeatherVC";
+NSString * const kDisplayImageVC = @"TodayExtensionOpenImageVC";
+NSString * const kDisplayCameraVC = @"TodayExtensionOpenCameraVC";
+
+
 @implementation ControlTodayViewDisplay
 
 + (void)hideTodayView

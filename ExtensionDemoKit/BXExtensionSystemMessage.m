@@ -13,6 +13,7 @@ NSString * const kBXExtensionContainingAPPURLScheme = @"iOSExtensionDeomContaing
 NSString * const kBXExtensionTodayExtensionIdentifier = @"renren.BXiOSExtensionDemo.BXTodayExtension";
 NSString * const kBXTodayHideUserdefaultsIdentifier = @"TodayExtensionHide";
 NSString * const kBXTodayMessageUserdefaultsIdentifier = @"messageTextField";
+NSString * const kBXFileManagerPath = @"Library/Caches/BXExtension";
 
 @implementation BXExtensionSystemMessage
 

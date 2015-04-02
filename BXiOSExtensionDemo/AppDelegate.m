@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import <ExtensionDemoKit/ExtensionDemoKit.h>
+#import <TodayExtensionDemoKit/TodayExtensionDemoKit.h>
+#import "BXWeatherViewController.h"
+#import "BXImageViewController.h"
+#import "BXCameraViewController.h"
 
 @interface AppDelegate ()
 
@@ -46,12 +51,18 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    if ([url.scheme isEqualToString:@"iOSExtensionDeomContaingAPP"]) {
-        if ([url.host isEqualToString:@"finished"]) {
-//            NSNotificationCenter.defaultCenter()
-//            .postNotificationName(taskDidFinishedInWidgetNotification, object: nil)
-            NSDictionary *dic = @{@"openPage":url.host};
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"openContainingAppNotification" object:self userInfo:dic];
+    if ([url.scheme isEqualToString:kBXExtensionContainingAPPURLScheme]) {
+        if ([url.host isEqualToString:kDisplayWeatherVC]) {
+//            NSDictionary *dic = @{@"openPage":url.host};
+//            [[NSNotificationCenter defaultCenter] postNotificationName:@"openContainingAppNotification" object:self userInfo:dic];
+            BXWeatherViewController *weatherVC = [BXWeatherViewController sharedInstance];
+            [self.window.rootViewController presentViewController:weatherVC animated:YES completion:nil];
+        }else if ([url.host isEqualToString:kDisplayImageVC]) {
+            BXImageViewController *weatherVC = [BXImageViewController sharedInstance];
+            [self.window.rootViewController presentViewController:weatherVC animated:YES completion:nil];
+        }else if ([url.host isEqualToString:kDisplayCameraVC]) {
+            BXCameraViewController *weatherVC = [BXCameraViewController sharedInstance];
+            [self.window.rootViewController presentViewController:weatherVC animated:YES completion:nil];
         }
         return YES;
     }

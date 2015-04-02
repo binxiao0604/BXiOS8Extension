@@ -67,7 +67,8 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self.messageTextField resignFirstResponder];
-    [[BXSharedUserDefaultsManager sharedManager] saveMessageWithText:textField.text];
+//    [[BXSharedUserDefaultsManager sharedManager] saveMessageWithText:textField.text];
+    [[BXSharedUserDefaultsManager sharedManager] saveMessageByFileManagerWithString:textField.text];
     return YES;
 }
 
@@ -89,21 +90,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"openContainingAppNotification" object:nil];
 }
-
-//#pragma mark ----filemanager共享数据---
-//- (void)saveTextByFileManager
-//{
-//    NSError *err = nil;
-//    NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.BXTodayExtensionGroups"];
-//    containerURL = [containerURL URLByAppendingPathComponent:@"Library/Caches/good"];
-//     NSString *value = self.messageTextField.text;
-//    BOOL result = [value writeToURL:containerURL atomically:YES encoding:NSUTF8StringEncoding error:&err];
-//    if (!result) {
-//    NSLog(@"%@",err);
-//    } else {
-//    NSLog(@"save value:%@ success.",value);
-//    }
-//}
 
 @end
 

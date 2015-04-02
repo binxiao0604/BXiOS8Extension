@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -24,8 +23,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGw-Yw-R0S">
-                                <rect key="frame" x="26" y="112" width="81" height="30"/>
-                                <state key="normal" title="open Image">
+                                <rect key="frame" x="31.5" y="112" width="57" height="30"/>
+                                <state key="normal" title="Weather">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -46,23 +45,39 @@
                                     <action selector="hideTodayExtension:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="64e-1Y-HmY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGe-j5-qBO">
-                                <rect key="frame" x="127" y="112" width="67" height="30"/>
-                                <state key="normal" title="open Text">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5f9-ce-HZi">
+                                <rect key="frame" x="138.5" y="112" width="43" height="30"/>
+                                <state key="normal" title="Image">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didClickImageButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="brn-MH-n0F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxl-PT-BDw">
+                                <rect key="frame" x="231.5" y="112" width="54" height="30"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickCameraButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="kol-A8-aIQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25490196079999999" green="0.79215686269999996" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="131" id="0Q0-KW-PJ6"/>
+                            <constraint firstItem="XGw-Yw-R0S" firstAttribute="bottom" secondItem="5f9-ce-HZi" secondAttribute="bottom" id="14K-Kl-M0O"/>
+                            <constraint firstItem="Mxl-PT-BDw" firstAttribute="leading" secondItem="5f9-ce-HZi" secondAttribute="trailing" constant="50" id="6P5-Wh-dDX"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" symbolic="YES" id="6Vq-gs-PHe"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="eQM-oe-yAe" secondAttribute="bottom" id="6iz-1Q-d8w"/>
-                            <constraint firstItem="XGw-Yw-R0S" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="10" id="JTu-pK-6hf"/>
+                            <constraint firstAttribute="centerX" secondItem="5f9-ce-HZi" secondAttribute="centerX" id="JZN-d3-GHZ"/>
                             <constraint firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="16" id="L8K-9R-egU"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="XGw-Yw-R0S" secondAttribute="bottom" constant="58" id="Nvx-zV-mNI"/>
                             <constraint firstItem="XGw-Yw-R0S" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="43" id="QCy-5z-rWJ"/>
                             <constraint firstItem="eQM-oe-yAe" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="5" id="WeF-g2-FQZ"/>
+                            <constraint firstItem="5f9-ce-HZi" firstAttribute="leading" secondItem="XGw-Yw-R0S" secondAttribute="trailing" constant="50" id="bbw-9D-KpY"/>
+                            <constraint firstItem="XGw-Yw-R0S" firstAttribute="bottom" secondItem="Mxl-PT-BDw" secondAttribute="bottom" id="eol-2c-mhb"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" symbolic="YES" id="mYS-Cv-VNx"/>
                         </constraints>
                     </view>

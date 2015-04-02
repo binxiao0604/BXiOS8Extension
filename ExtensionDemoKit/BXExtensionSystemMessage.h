@@ -13,7 +13,7 @@ extern NSString * const kBXExtensionContainingAPPURLScheme;
 extern NSString * const kBXExtensionTodayExtensionIdentifier;
 extern NSString * const kBXTodayHideUserdefaultsIdentifier;
 extern NSString * const kBXTodayMessageUserdefaultsIdentifier;
-
+extern NSString * const kBXFileManagerPath;
 
 @interface BXExtensionSystemMessage : NSObject
 

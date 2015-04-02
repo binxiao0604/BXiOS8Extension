@@ -37,6 +37,10 @@
 		BCD1DCB71ACCF53A0022F47C /* ControlTodayViewDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD1DCB51ACCF53A0022F47C /* ControlTodayViewDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCD1DCB81ACCF53A0022F47C /* ControlTodayViewDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DCB61ACCF53A0022F47C /* ControlTodayViewDisplay.m */; };
 		BCD1DCB91ACD16E30022F47C /* ExtensionDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2183911ACA5F7600628F2A /* ExtensionDemoKit.framework */; };
+		BCD1DCBC1ACD41E00022F47C /* BXWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DCBB1ACD41E00022F47C /* BXWeatherViewController.m */; };
+		BCD1DCBF1ACD41EC0022F47C /* BXImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DCBE1ACD41EC0022F47C /* BXImageViewController.m */; };
+		BCD1DCC21ACD42030022F47C /* BXCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DCC11ACD42030022F47C /* BXCameraViewController.m */; };
+		BCD1DCC41ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1DCC31ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +182,14 @@
 		BCA4E64F1AC95D79007C1B71 /* TodayExtensionDemoKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayExtensionDemoKitTests.m; sourceTree = "<group>"; };
 		BCD1DCB51ACCF53A0022F47C /* ControlTodayViewDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlTodayViewDisplay.h; sourceTree = "<group>"; };
 		BCD1DCB61ACCF53A0022F47C /* ControlTodayViewDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlTodayViewDisplay.m; sourceTree = "<group>"; };
+		BCD1DCBA1ACD41E00022F47C /* BXWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXWeatherViewController.h; sourceTree = "<group>"; };
+		BCD1DCBB1ACD41E00022F47C /* BXWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXWeatherViewController.m; sourceTree = "<group>"; };
+		BCD1DCBD1ACD41EC0022F47C /* BXImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXImageViewController.h; sourceTree = "<group>"; };
+		BCD1DCBE1ACD41EC0022F47C /* BXImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXImageViewController.m; sourceTree = "<group>"; };
+		BCD1DCC01ACD42030022F47C /* BXCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXCameraViewController.h; sourceTree = "<group>"; };
+		BCD1DCC11ACD42030022F47C /* BXCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXCameraViewController.m; sourceTree = "<group>"; };
+		BCD1DCC31ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2015-04-02 17.58.57.png"; sourceTree = "<group>"; };
+		BCD1DCC51ACD66D10022F47C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,11 +323,18 @@
 		BCA4E5E11AC46DE8007C1B71 /* BXiOSExtensionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BCD1DCC31ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png */,
 				BCA4E61F1AC46E13007C1B71 /* BXiOSExtensionDemo.entitlements */,
 				BCA4E5E61AC46DE8007C1B71 /* AppDelegate.h */,
 				BCA4E5E71AC46DE8007C1B71 /* AppDelegate.m */,
 				BCA4E5E91AC46DE8007C1B71 /* ViewController.h */,
 				BCA4E5EA1AC46DE8007C1B71 /* ViewController.m */,
+				BCD1DCBA1ACD41E00022F47C /* BXWeatherViewController.h */,
+				BCD1DCBB1ACD41E00022F47C /* BXWeatherViewController.m */,
+				BCD1DCBD1ACD41EC0022F47C /* BXImageViewController.h */,
+				BCD1DCBE1ACD41EC0022F47C /* BXImageViewController.m */,
+				BCD1DCC01ACD42030022F47C /* BXCameraViewController.h */,
+				BCD1DCC11ACD42030022F47C /* BXCameraViewController.m */,
 				BCA4E5EC1AC46DE8007C1B71 /* Main.storyboard */,
 				BCA4E5EF1AC46DE8007C1B71 /* Images.xcassets */,
 				BCA4E5F11AC46DE8007C1B71 /* LaunchScreen.xib */,
@@ -353,6 +372,7 @@
 		BCA4E60D1AC46E01007C1B71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCD1DCC51ACD66D10022F47C /* libsqlite3.0.dylib */,
 				BCA4E60E1AC46E01007C1B71 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -578,6 +598,7 @@
 		BCA4E5D71AC46DE8007C1B71 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BX;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "彬潇";
 				TargetAttributes = {
@@ -666,6 +687,7 @@
 			files = (
 				BCA4E5EE1AC46DE8007C1B71 /* Main.storyboard in Resources */,
 				BCA4E5F31AC46DE8007C1B71 /* LaunchScreen.xib in Resources */,
+				BCD1DCC41ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png in Resources */,
 				BCA4E5F01AC46DE8007C1B71 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,7 +745,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD1DCBF1ACD41EC0022F47C /* BXImageViewController.m in Sources */,
+				BCD1DCC21ACD42030022F47C /* BXCameraViewController.m in Sources */,
 				BCA4E5EB1AC46DE8007C1B71 /* ViewController.m in Sources */,
+				BCD1DCBC1ACD41E00022F47C /* BXWeatherViewController.m in Sources */,
 				BCA4E5E81AC46DE8007C1B71 /* AppDelegate.m in Sources */,
 				BCA4E5E51AC46DE8007C1B71 /* main.m in Sources */,
 			);

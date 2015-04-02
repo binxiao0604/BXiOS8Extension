@@ -15,6 +15,7 @@
 
 @property (nonatomic,strong) NSUserDefaults *sharedUserDefault;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@property (nonatomic , copy) NSString *openVCTypeString;
 
 @end
 
@@ -22,7 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.messageLabel.text = [[BXSharedUserDefaultsManager sharedManager] readMessageFromUserDefaults] ? : @"";
+//    self.messageLabel.text = [[BXSharedUserDefaultsManager sharedManager] readMessageFromUserDefaults] ? : @"";
+    self.messageLabel.text =  [[BXSharedUserDefaultsManager sharedManager] readMessageFromFileManager] ? : @"";
 //    有的时候运行程序，view显示不出来，这个时候你可能需要,或者根据需要调整界面大小;
 //    self.preferredContentSize = CGSizeMake(0, 400);//宽度默认是整屏，设置宽度无效;
 }
@@ -40,7 +42,8 @@
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
 //一般可以做一些像 API 请求之类的事情，在获取到了数据并更新了界面，或者是失败后都使用提供的 completionHandler 来向系统进行报告。
     NSString *oldMessage = self.messageLabel.text;
-    NSString *newMessage = [[BXSharedUserDefaultsManager sharedManager] readMessageFromUserDefaults];
+    //    NSString *newMessage = [[BXSharedUserDefaultsManager sharedManager] readMessageFromUserDefaults];    [[BXSharedUserDefaultsManager sharedManager] saveMessageByFileManagerWithString:textField.text];
+      NSString *newMessage = [[BXSharedUserDefaultsManager sharedManager] readMessageFromFileManager];
     if (!newMessage) {
         completionHandler(NCUpdateResultFailed);
     }else if([oldMessage isEqual:newMessage])
@@ -59,8 +62,27 @@
 
 - (IBAction)didClickWeather:(id)sender {
     NSLog(@"%s_%d_| ",__FUNCTION__,__LINE__);
-    [self.extensionContext openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@://openImagePage",kBXExtensionContainingAPPURLScheme]] completionHandler:^(BOOL success) {
-      NSLog(@"%s_%d_|  open Containing App success ",__FUNCTION__,__LINE__);
+    self.openVCTypeString = kDisplayWeatherVC;
+    [self openContainingAppWithTypeString];
+}
+
+- (IBAction)didClickImageButton:(id)sender {
+    NSLog(@"%s_%d_| ",__FUNCTION__,__LINE__);
+    self.openVCTypeString = kDisplayImageVC;
+    [self openContainingAppWithTypeString];
+}
+
+- (IBAction)didClickCameraButton:(id)sender {
+    NSLog(@"%s_%d_| ",__FUNCTION__,__LINE__);
+    self.openVCTypeString = kDisplayCameraVC;
+    [self openContainingAppWithTypeString];
+}
+
+
+- (void)openContainingAppWithTypeString
+{
+    [self.extensionContext openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@://%@",kBXExtensionContainingAPPURLScheme,self.openVCTypeString]] completionHandler:^(BOOL success) {
+        NSLog(@"%s_%d_|  open Containing App success %@ ",__FUNCTION__,__LINE__,self.openVCTypeString);
     }];
 }
 

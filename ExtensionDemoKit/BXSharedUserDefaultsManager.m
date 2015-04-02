@@ -7,6 +7,7 @@
 //
 
 #import "BXSharedUserDefaultsManager.h"
+#import <CoreData/CoreData.h>
 
 @implementation BXSharedUserDefaultsManager
 
@@ -54,6 +55,30 @@
     [self.sharedUserdefaults synchronize];
     [self.sharedUserdefaults setObject:@(hide) forKey:kBXTodayHideUserdefaultsIdentifier];
     [self.sharedUserdefaults synchronize];
+}
+
+- (void)saveMessageByFileManagerWithString:(NSString *)messageString;
+{
+    NSError *err = nil;
+    NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:kBXExtensionGroupName];
+    containerURL = [containerURL URLByAppendingPathComponent:kBXFileManagerPath];
+    BOOL result = [messageString writeToURL:containerURL atomically:YES encoding:NSUTF8StringEncoding error:&err];
+    if (!result) {
+        NSLog(@"%@",err);
+    } else {
+        NSLog(@"save value:%@ success.",messageString);
+    }
+}
+
+- (NSString *)readMessageFromFileManager
+{
+    NSError *err = nil;
+    NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:kBXExtensionGroupName];
+    containerURL = [containerURL URLByAppendingPathComponent:kBXFileManagerPath];
+    NSString *value = [NSString stringWithContentsOfURL:containerURL encoding:NSUTF8StringEncoding error:&err];
+    NSLog(@"%s_%d_| read data by FileManager success %@",__FUNCTION__,__LINE__,value);
+    return value;
+    
 }
 
 @end

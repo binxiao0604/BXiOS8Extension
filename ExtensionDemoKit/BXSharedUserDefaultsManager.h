@@ -21,4 +21,7 @@
 - (void)saveMessageWithText:(NSString *)textString;
 - (void)saveTodayHideStateWithBool:(BOOL)hide;
 
+- (void)saveMessageByFileManagerWithString:(NSString *)messageString;
+- (NSString *)readMessageFromFileManager;
+
 @end
