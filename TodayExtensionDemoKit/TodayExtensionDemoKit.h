@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <TodayExtensionDemoKit/ControlTodayViewDisplay.h>
 //! Project version number for TodayExtensionDemoKit.
 FOUNDATION_EXPORT double TodayExtensionDemoKitVersionNumber;
 

@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const kBXExtensionGroupName;
+extern NSString * const kBXExtensionContainingAPPURLScheme;
+extern NSString * const kBXExtensionTodayExtensionIdentifier;
+extern NSString * const kBXTodayHideUserdefaultsIdentifier;
+extern NSString * const kBXTodayMessageUserdefaultsIdentifier;
+
+
 @interface BXExtensionSystemMessage : NSObject
 
 @end

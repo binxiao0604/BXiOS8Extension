@@ -8,6 +8,12 @@
 
 #import "BXExtensionSystemMessage.h"
 
+NSString * const kBXExtensionGroupName = @"group.BXTodayExtensionGroups";
+NSString * const kBXExtensionContainingAPPURLScheme = @"iOSExtensionDeomContaingAPP";
+NSString * const kBXExtensionTodayExtensionIdentifier = @"renren.BXiOSExtensionDemo.BXTodayExtension";
+NSString * const kBXTodayHideUserdefaultsIdentifier = @"TodayExtensionHide";
+NSString * const kBXTodayMessageUserdefaultsIdentifier = @"messageTextField";
+
 @implementation BXExtensionSystemMessage
 
 @end

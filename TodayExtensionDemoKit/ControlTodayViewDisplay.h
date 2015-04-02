@@ -10,4 +10,7 @@
 
 @interface ControlTodayViewDisplay : NSObject
 
++ (void)hideTodayView;
++ (void)showTodayView;
+
 @end

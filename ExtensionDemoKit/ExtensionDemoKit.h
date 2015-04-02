@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ExtensionDemoKit/BXSharedUserDefaultsManager.h>
+#import <ExtensionDemoKit/BXExtensionSystemMessage.h>
 
 //! Project version number for ExtensionDemoKit.
 FOUNDATION_EXPORT double ExtensionDemoKitVersionNumber;
@@ -15,5 +17,4 @@ FOUNDATION_EXPORT double ExtensionDemoKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char ExtensionDemoKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ExtensionDemoKit/PublicHeader.h>
-
 

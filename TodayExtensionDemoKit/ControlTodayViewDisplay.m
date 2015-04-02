@@ -7,7 +7,19 @@
 //
 
 #import "ControlTodayViewDisplay.h"
+#import <NotificationCenter/NotificationCenter.h>
+#import <ExtensionDemoKit/ExtensionDemoKit.h>
 
 @implementation ControlTodayViewDisplay
+
++ (void)hideTodayView
+{
+    [[NCWidgetController widgetController] setHasContent:NO forWidgetWithBundleIdentifier:kBXExtensionTodayExtensionIdentifier];
+}
+
++ (void)showTodayView
+{
+    [[NCWidgetController widgetController] setHasContent:YES forWidgetWithBundleIdentifier:kBXExtensionTodayExtensionIdentifier];
+}
 
 @end

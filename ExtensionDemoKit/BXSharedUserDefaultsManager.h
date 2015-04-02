@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BXExtensionSystemMessage.h"
 
 @interface BXSharedUserDefaultsManager : NSObject
+
+@property (nonatomic , strong) NSUserDefaults *sharedUserdefaults;
+
++ (instancetype)sharedManager;
+
+- (NSUserDefaults *)sharedUserdefaultForExtension;
+- (NSString *)readMessageFromUserDefaults;
+- (BOOL)readTodayHideStateFromUserDefaults;
+- (void)saveMessageWithText:(NSString *)textString;
+- (void)saveTodayHideStateWithBool:(BOOL)hide;
 
 @end
