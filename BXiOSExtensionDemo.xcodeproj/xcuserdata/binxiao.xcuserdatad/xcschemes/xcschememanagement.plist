@@ -9,15 +9,10 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>BXImageProgressKit.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
 		<key>BXKeyboardExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>9</integer>
 		</dict>
 		<key>BXPhotoEditingExtension.xcscheme</key>
 		<dict>
@@ -27,12 +22,12 @@
 		<key>BXProviderExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>7</integer>
 		</dict>
 		<key>BXProviderExtensionFileProvider.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>8</integer>
 		</dict>
 		<key>BXShareExtension.xcscheme</key>
 		<dict>
@@ -53,11 +48,6 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
-		</dict>
-		<key>Test.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
 		</dict>
 		<key>TodayExtensionDemoKit.xcscheme</key>
 		<dict>
@@ -117,16 +107,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BCD1DD461ACDB70B0022F47C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BCD1DD501ACDB70B0022F47C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>BCEF0B281ACE36E6002ECAF4</key>
 		<dict>
 			<key>primary</key>
@@ -138,11 +118,6 @@
 			<true/>
 		</dict>
 		<key>BCEF0B4E1ACE40CE002ECAF4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BCEF0B5F1ACE7D38002ECAF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

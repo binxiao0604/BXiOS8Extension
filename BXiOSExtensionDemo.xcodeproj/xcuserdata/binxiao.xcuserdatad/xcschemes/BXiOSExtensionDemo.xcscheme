@@ -62,20 +62,6 @@
                ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCD1DD501ACDB70B0022F47C"
-               BuildableName = "BXImageProgressKitTests.xctest"
-               BlueprintName = "BXImageProgressKitTests"
-               ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -111,16 +97,6 @@
                BlueprintIdentifier = "BC21839A1ACA5F7600628F2A"
                BuildableName = "ExtensionDemoKitTests.xctest"
                BlueprintName = "ExtensionDemoKitTests"
-               ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCD1DD501ACDB70B0022F47C"
-               BuildableName = "BXImageProgressKitTests.xctest"
-               BlueprintName = "BXImageProgressKitTests"
                ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>

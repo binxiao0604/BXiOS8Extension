@@ -35,20 +35,6 @@
                ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCD1DD501ACDB70B0022F47C"
-               BuildableName = "BXImageProgressKitTests.xctest"
-               BlueprintName = "BXImageProgressKitTests"
-               ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -57,23 +43,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCD1DD501ACDB70B0022F47C"
-               BuildableName = "BXImageProgressKitTests.xctest"
-               BlueprintName = "BXImageProgressKitTests"
-               ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCA4E5DE1AC46DE8007C1B71"
-            BuildableName = "BXiOSExtensionDemo.app"
-            BlueprintName = "BXiOSExtensionDemo"
+            BlueprintIdentifier = "BCD1DCFF1ACD6F100022F47C"
+            BuildableName = "BXShareExtension.appex"
+            BlueprintName = "BXShareExtension"
             ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -88,12 +64,8 @@
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <RemoteRunnable
-         runnableDebuggingMode = "1"
-         BundleIdentifier = "com.apple.mobileslideshow"
-         RemotePath = "/Applications/MobileSlideShow.app">
-      </RemoteRunnable>
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BCA4E5DE1AC46DE8007C1B71"
@@ -101,7 +73,7 @@
             BlueprintName = "BXiOSExtensionDemo"
             ReferencedContainer = "container:BXiOSExtensionDemo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

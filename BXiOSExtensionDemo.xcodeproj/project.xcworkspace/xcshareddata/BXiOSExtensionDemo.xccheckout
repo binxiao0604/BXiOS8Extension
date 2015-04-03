@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>615A0838-3BE3-48AD-BADB-3B543AF8C19F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BXiOSExtensionDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BEB5AC15656A78C5BBFC924292B0DAE58764924C</key>
+		<string>https://github.com/binxiao0604/BXiOS8Extension</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BXiOSExtensionDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BEB5AC15656A78C5BBFC924292B0DAE58764924C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/binxiao0604/BXiOS8Extension</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BEB5AC15656A78C5BBFC924292B0DAE58764924C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BEB5AC15656A78C5BBFC924292B0DAE58764924C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BXiOSExtensionDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
