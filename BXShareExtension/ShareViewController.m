@@ -2,7 +2,7 @@
 //  ShareViewController.m
 //  BXShareExtension
 //
-//  Created by 彬潇 on 15/4/2.
+//  Created by 彬潇 on 15/3/25.
 //  Copyright (c) 2015年 彬潇. All rights reserved.
 //
 
@@ -48,6 +48,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
     self.placeholder = @"请输入分享内容";
     self.title = @"分享";
     NSLog(@"%s_%d_|  extensionContext =  %@",__FUNCTION__,__LINE__,self.extensionContext);

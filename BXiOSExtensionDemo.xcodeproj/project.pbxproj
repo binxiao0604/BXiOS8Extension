@@ -57,6 +57,13 @@
 		BCD1DD3B1ACDB1290022F47C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD1DD3A1ACDB1290022F47C /* MainInterface.storyboard */; };
 		BCD1DD3E1ACDB1290022F47C /* BXPhotoEditingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCD1DD2F1ACDB1290022F47C /* BXPhotoEditingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCD1DD721ACDBF9C0022F47C /* BXImageProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DD711ACDBF9C0022F47C /* BXImageProgress.m */; };
+		BCEF0B301ACE36E6002ECAF4 /* DocumentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEF0B2F1ACE36E6002ECAF4 /* DocumentPickerViewController.m */; };
+		BCEF0B321ACE36E6002ECAF4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEF0B311ACE36E6002ECAF4 /* MainInterface.storyboard */; };
+		BCEF0B3E1ACE36E6002ECAF4 /* FileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEF0B3D1ACE36E6002ECAF4 /* FileProvider.m */; };
+		BCEF0B411ACE36E6002ECAF4 /* BXProviderExtensionFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCEF0B371ACE36E6002ECAF4 /* BXProviderExtensionFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCEF0B441ACE36E7002ECAF4 /* BXProviderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCEF0B291ACE36E6002ECAF4 /* BXProviderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCEF0B551ACE40CE002ECAF4 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEF0B541ACE40CE002ECAF4 /* KeyboardViewController.m */; };
+		BCEF0B581ACE40CE002ECAF4 /* BXKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCEF0B4F1ACE40CE002ECAF4 /* BXKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +158,27 @@
 			remoteGlobalIDString = BCD1DD2E1ACDB1290022F47C;
 			remoteInfo = BXPhotoEditingExtension;
 		};
+		BCEF0B3F1ACE36E6002ECAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA4E5D71AC46DE8007C1B71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEF0B361ACE36E6002ECAF4;
+			remoteInfo = BXProviderExtensionFileProvider;
+		};
+		BCEF0B421ACE36E7002ECAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA4E5D71AC46DE8007C1B71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEF0B281ACE36E6002ECAF4;
+			remoteInfo = BXProviderExtension;
+		};
+		BCEF0B561ACE40CE002ECAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA4E5D71AC46DE8007C1B71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEF0B4E1ACE40CE002ECAF4;
+			remoteInfo = BXKeyboardExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -161,9 +189,12 @@
 			dstSubfolderSpec = 13;
 			files = (
 				BCD1DD0B1ACD6F100022F47C /* BXShareExtension.appex in Embed App Extensions */,
+				BCEF0B441ACE36E7002ECAF4 /* BXProviderExtension.appex in Embed App Extensions */,
 				BCA4E61A1AC46E01007C1B71 /* BXTodayExtension.appex in Embed App Extensions */,
 				BCD1DD3E1ACDB1290022F47C /* BXPhotoEditingExtension.appex in Embed App Extensions */,
+				BCEF0B581ACE40CE002ECAF4 /* BXKeyboardExtension.appex in Embed App Extensions */,
 				BCD1DD221ACDA7F50022F47C /* BXActionExtension.appex in Embed App Extensions */,
+				BCEF0B411ACE36E6002ECAF4 /* BXProviderExtensionFileProvider.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +285,21 @@
 		BCD1DD3A1ACDB1290022F47C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		BCD1DD701ACDBF9C0022F47C /* BXImageProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXImageProgress.h; sourceTree = "<group>"; };
 		BCD1DD711ACDBF9C0022F47C /* BXImageProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXImageProgress.m; sourceTree = "<group>"; };
+		BCEF0B291ACE36E6002ECAF4 /* BXProviderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BXProviderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEF0B2C1ACE36E6002ECAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEF0B2D1ACE36E6002ECAF4 /* BXProviderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BXProviderExtension.entitlements; sourceTree = "<group>"; };
+		BCEF0B2E1ACE36E6002ECAF4 /* DocumentPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentPickerViewController.h; sourceTree = "<group>"; };
+		BCEF0B2F1ACE36E6002ECAF4 /* DocumentPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentPickerViewController.m; sourceTree = "<group>"; };
+		BCEF0B311ACE36E6002ECAF4 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		BCEF0B371ACE36E6002ECAF4 /* BXProviderExtensionFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BXProviderExtensionFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEF0B3A1ACE36E6002ECAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEF0B3B1ACE36E6002ECAF4 /* BXProviderExtensionFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BXProviderExtensionFileProvider.entitlements; sourceTree = "<group>"; };
+		BCEF0B3C1ACE36E6002ECAF4 /* FileProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProvider.h; sourceTree = "<group>"; };
+		BCEF0B3D1ACE36E6002ECAF4 /* FileProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProvider.m; sourceTree = "<group>"; };
+		BCEF0B4F1ACE40CE002ECAF4 /* BXKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BXKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEF0B521ACE40CE002ECAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEF0B531ACE40CE002ECAF4 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		BCEF0B541ACE40CE002ECAF4 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +386,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCEF0B261ACE36E6002ECAF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEF0B341ACE36E6002ECAF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEF0B4C1ACE40CE002ECAF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -394,6 +461,9 @@
 				BCD1DD011ACD6F100022F47C /* BXShareExtension */,
 				BCD1DD181ACDA7F50022F47C /* BXActionExtension */,
 				BCD1DD341ACDB1290022F47C /* BXPhotoEditingExtension */,
+				BCEF0B2A1ACE36E6002ECAF4 /* BXProviderExtension */,
+				BCEF0B381ACE36E6002ECAF4 /* BXProviderExtensionFileProvider */,
+				BCEF0B501ACE40CE002ECAF4 /* BXKeyboardExtension */,
 				BCA4E60D1AC46E01007C1B71 /* Frameworks */,
 				BCA4E5E01AC46DE8007C1B71 /* Products */,
 			);
@@ -412,6 +482,9 @@
 				BCD1DD001ACD6F100022F47C /* BXShareExtension.appex */,
 				BCD1DD171ACDA7F50022F47C /* BXActionExtension.appex */,
 				BCD1DD2F1ACDB1290022F47C /* BXPhotoEditingExtension.appex */,
+				BCEF0B291ACE36E6002ECAF4 /* BXProviderExtension.appex */,
+				BCEF0B371ACE36E6002ECAF4 /* BXProviderExtensionFileProvider.appex */,
+				BCEF0B4F1ACE40CE002ECAF4 /* BXKeyboardExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -596,6 +669,63 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BCEF0B2A1ACE36E6002ECAF4 /* BXProviderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF0B2E1ACE36E6002ECAF4 /* DocumentPickerViewController.h */,
+				BCEF0B2F1ACE36E6002ECAF4 /* DocumentPickerViewController.m */,
+				BCEF0B311ACE36E6002ECAF4 /* MainInterface.storyboard */,
+				BCEF0B2B1ACE36E6002ECAF4 /* Supporting Files */,
+			);
+			path = BXProviderExtension;
+			sourceTree = "<group>";
+		};
+		BCEF0B2B1ACE36E6002ECAF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF0B2C1ACE36E6002ECAF4 /* Info.plist */,
+				BCEF0B2D1ACE36E6002ECAF4 /* BXProviderExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCEF0B381ACE36E6002ECAF4 /* BXProviderExtensionFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF0B3C1ACE36E6002ECAF4 /* FileProvider.h */,
+				BCEF0B3D1ACE36E6002ECAF4 /* FileProvider.m */,
+				BCEF0B391ACE36E6002ECAF4 /* Supporting Files */,
+			);
+			path = BXProviderExtensionFileProvider;
+			sourceTree = "<group>";
+		};
+		BCEF0B391ACE36E6002ECAF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF0B3A1ACE36E6002ECAF4 /* Info.plist */,
+				BCEF0B3B1ACE36E6002ECAF4 /* BXProviderExtensionFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCEF0B501ACE40CE002ECAF4 /* BXKeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF0B531ACE40CE002ECAF4 /* KeyboardViewController.h */,
+				BCEF0B541ACE40CE002ECAF4 /* KeyboardViewController.m */,
+				BCEF0B511ACE40CE002ECAF4 /* Supporting Files */,
+			);
+			path = BXKeyboardExtension;
+			sourceTree = "<group>";
+		};
+		BCEF0B511ACE40CE002ECAF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF0B521ACE40CE002ECAF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -677,6 +807,9 @@
 				BCD1DD0A1ACD6F100022F47C /* PBXTargetDependency */,
 				BCD1DD211ACDA7F50022F47C /* PBXTargetDependency */,
 				BCD1DD3D1ACDB1290022F47C /* PBXTargetDependency */,
+				BCEF0B401ACE36E6002ECAF4 /* PBXTargetDependency */,
+				BCEF0B431ACE36E7002ECAF4 /* PBXTargetDependency */,
+				BCEF0B571ACE40CE002ECAF4 /* PBXTargetDependency */,
 			);
 			name = BXiOSExtensionDemo;
 			productName = BXiOSExtensionDemo;
@@ -808,6 +941,57 @@
 			productReference = BCD1DD2F1ACDB1290022F47C /* BXPhotoEditingExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		BCEF0B281ACE36E6002ECAF4 /* BXProviderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEF0B4A1ACE36E8002ECAF4 /* Build configuration list for PBXNativeTarget "BXProviderExtension" */;
+			buildPhases = (
+				BCEF0B251ACE36E6002ECAF4 /* Sources */,
+				BCEF0B261ACE36E6002ECAF4 /* Frameworks */,
+				BCEF0B271ACE36E6002ECAF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BXProviderExtension;
+			productName = BXProviderExtension;
+			productReference = BCEF0B291ACE36E6002ECAF4 /* BXProviderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BCEF0B361ACE36E6002ECAF4 /* BXProviderExtensionFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEF0B491ACE36E8002ECAF4 /* Build configuration list for PBXNativeTarget "BXProviderExtensionFileProvider" */;
+			buildPhases = (
+				BCEF0B331ACE36E6002ECAF4 /* Sources */,
+				BCEF0B341ACE36E6002ECAF4 /* Frameworks */,
+				BCEF0B351ACE36E6002ECAF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BXProviderExtensionFileProvider;
+			productName = BXProviderExtensionFileProvider;
+			productReference = BCEF0B371ACE36E6002ECAF4 /* BXProviderExtensionFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BCEF0B4E1ACE40CE002ECAF4 /* BXKeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEF0B591ACE40D0002ECAF4 /* Build configuration list for PBXNativeTarget "BXKeyboardExtension" */;
+			buildPhases = (
+				BCEF0B4B1ACE40CE002ECAF4 /* Sources */,
+				BCEF0B4C1ACE40CE002ECAF4 /* Frameworks */,
+				BCEF0B4D1ACE40CE002ECAF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BXKeyboardExtension;
+			productName = BXKeyboardExtension;
+			productReference = BCEF0B4F1ACE40CE002ECAF4 /* BXKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -873,6 +1057,18 @@
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = TBMTVZDR9B;
 					};
+					BCEF0B281ACE36E6002ECAF4 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TBMTVZDR9B;
+					};
+					BCEF0B361ACE36E6002ECAF4 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TBMTVZDR9B;
+					};
+					BCEF0B4E1ACE40CE002ECAF4 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TBMTVZDR9B;
+					};
 				};
 			};
 			buildConfigurationList = BCA4E5DA1AC46DE8007C1B71 /* Build configuration list for PBXProject "BXiOSExtensionDemo" */;
@@ -898,6 +1094,9 @@
 				BCD1DCFF1ACD6F100022F47C /* BXShareExtension */,
 				BCD1DD161ACDA7F50022F47C /* BXActionExtension */,
 				BCD1DD2E1ACDB1290022F47C /* BXPhotoEditingExtension */,
+				BCEF0B281ACE36E6002ECAF4 /* BXProviderExtension */,
+				BCEF0B361ACE36E6002ECAF4 /* BXProviderExtensionFileProvider */,
+				BCEF0B4E1ACE40CE002ECAF4 /* BXKeyboardExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -978,6 +1177,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCD1DD3B1ACDB1290022F47C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEF0B271ACE36E6002ECAF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEF0B321ACE36E6002ECAF4 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEF0B351ACE36E6002ECAF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEF0B4D1ACE40CE002ECAF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1072,6 +1293,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCEF0B251ACE36E6002ECAF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEF0B301ACE36E6002ECAF4 /* DocumentPickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEF0B331ACE36E6002ECAF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEF0B3E1ACE36E6002ECAF4 /* FileProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEF0B4B1ACE40CE002ECAF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEF0B551ACE40CE002ECAF4 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1139,6 +1384,21 @@
 			isa = PBXTargetDependency;
 			target = BCD1DD2E1ACDB1290022F47C /* BXPhotoEditingExtension */;
 			targetProxy = BCD1DD3C1ACDB1290022F47C /* PBXContainerItemProxy */;
+		};
+		BCEF0B401ACE36E6002ECAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCEF0B361ACE36E6002ECAF4 /* BXProviderExtensionFileProvider */;
+			targetProxy = BCEF0B3F1ACE36E6002ECAF4 /* PBXContainerItemProxy */;
+		};
+		BCEF0B431ACE36E7002ECAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCEF0B281ACE36E6002ECAF4 /* BXProviderExtension */;
+			targetProxy = BCEF0B421ACE36E7002ECAF4 /* PBXContainerItemProxy */;
+		};
+		BCEF0B571ACE40CE002ECAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCEF0B4E1ACE40CE002ECAF4 /* BXKeyboardExtension */;
+			targetProxy = BCEF0B561ACE40CE002ECAF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1582,6 +1842,98 @@
 			};
 			name = Release;
 		};
+		BCEF0B451ACE36E8002ECAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BXProviderExtension/BXProviderExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BXProviderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCEF0B461ACE36E8002ECAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BXProviderExtension/BXProviderExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BXProviderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCEF0B471ACE36E8002ECAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BXProviderExtensionFileProvider/BXProviderExtensionFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BXProviderExtensionFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCEF0B481ACE36E8002ECAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BXProviderExtensionFileProvider/BXProviderExtensionFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BXProviderExtensionFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCEF0B5A1ACE40D0002ECAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BXKeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCEF0B5B1ACE40D0002ECAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BXKeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1664,6 +2016,7 @@
 				BCD1DD0E1ACD6F110022F47C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCD1DD231ACDA7F60022F47C /* Build configuration list for PBXNativeTarget "BXActionExtension" */ = {
 			isa = XCConfigurationList;
@@ -1672,12 +2025,38 @@
 				BCD1DD251ACDA7F60022F47C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCD1DD3F1ACDB12A0022F47C /* Build configuration list for PBXNativeTarget "BXPhotoEditingExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCD1DD401ACDB12A0022F47C /* Debug */,
 				BCD1DD411ACDB12A0022F47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEF0B491ACE36E8002ECAF4 /* Build configuration list for PBXNativeTarget "BXProviderExtensionFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEF0B471ACE36E8002ECAF4 /* Debug */,
+				BCEF0B481ACE36E8002ECAF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCEF0B4A1ACE36E8002ECAF4 /* Build configuration list for PBXNativeTarget "BXProviderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEF0B451ACE36E8002ECAF4 /* Debug */,
+				BCEF0B461ACE36E8002ECAF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCEF0B591ACE40D0002ECAF4 /* Build configuration list for PBXNativeTarget "BXKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEF0B5A1ACE40D0002ECAF4 /* Debug */,
+				BCEF0B5B1ACE40D0002ECAF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
