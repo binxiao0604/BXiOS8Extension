@@ -64,6 +64,7 @@
 		BCEF0B441ACE36E7002ECAF4 /* BXProviderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCEF0B291ACE36E6002ECAF4 /* BXProviderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCEF0B551ACE40CE002ECAF4 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEF0B541ACE40CE002ECAF4 /* KeyboardViewController.m */; };
 		BCEF0B581ACE40CE002ECAF4 /* BXKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCEF0B4F1ACE40CE002ECAF4 /* BXKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCEF0B6E1ACE90E0002ECAF4 /* iOS8Extension.key in Resources */ = {isa = PBXBuildFile; fileRef = BCEF0B6D1ACE90E0002ECAF4 /* iOS8Extension.key */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -300,6 +301,7 @@
 		BCEF0B521ACE40CE002ECAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCEF0B531ACE40CE002ECAF4 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		BCEF0B541ACE40CE002ECAF4 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		BCEF0B6D1ACE90E0002ECAF4 /* iOS8Extension.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS8Extension.key; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,6 +494,7 @@
 		BCA4E5E11AC46DE8007C1B71 /* BXiOSExtensionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BCEF0B6D1ACE90E0002ECAF4 /* iOS8Extension.key */,
 				BCD1DCC31ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png */,
 				BCA4E61F1AC46E13007C1B71 /* BXiOSExtensionDemo.entitlements */,
 				BCA4E5E61AC46DE8007C1B71 /* AppDelegate.h */,
@@ -1122,6 +1125,7 @@
 			files = (
 				BCA4E5EE1AC46DE8007C1B71 /* Main.storyboard in Resources */,
 				BCA4E5F31AC46DE8007C1B71 /* LaunchScreen.xib in Resources */,
+				BCEF0B6E1ACE90E0002ECAF4 /* iOS8Extension.key in Resources */,
 				BCD1DCC41ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png in Resources */,
 				BCA4E5F01AC46DE8007C1B71 /* Images.xcassets in Resources */,
 			);
