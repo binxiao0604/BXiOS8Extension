@@ -81,4 +81,26 @@
     
 }
 
+- (void)saveMessageByFileManagerWithImage:(UIImage *)image
+{
+    NSError *err = nil;
+    NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:kBXExtensionGroupName];
+    containerURL = [containerURL URLByAppendingPathComponent:kBXFileManagerImagePath];
+    NSData *data = UIImagePNGRepresentation(image);
+    BOOL result =  [data writeToURL:containerURL atomically:YES];
+    if (!result) {
+        NSLog(@"%@",err);
+    } else {
+        NSLog(@"save  image success.");
+    }
+}
+
+- (UIImage *)readImageFromFileManager
+{
+    NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:kBXExtensionGroupName];
+    containerURL = [containerURL URLByAppendingPathComponent:kBXFileManagerImagePath];
+    NSData *data = [NSData dataWithContentsOfURL:containerURL];
+    return [UIImage imageWithData:data];
+}
+
 @end

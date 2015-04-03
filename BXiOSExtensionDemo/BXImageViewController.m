@@ -7,8 +7,11 @@
 //
 
 #import "BXImageViewController.h"
+#import <ExtensionDemoKit/ExtensionDemoKit.h>
 
 @interface BXImageViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -25,6 +28,11 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self uploadImageFormFileManager];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -36,6 +44,12 @@
         [self dismissViewControllerAnimated:YES completion:nil];
         
     }
+}
+
+- (void)uploadImageFormFileManager
+{
+    self.imageView.image = [[BXSharedUserDefaultsManager sharedManager]readImageFromFileManager] ? :[UIImage imageNamed:@"屏幕快照 2015-04-02 17.58.57"];
+
 }
 
 @end

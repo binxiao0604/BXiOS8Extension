@@ -14,6 +14,11 @@ NSString * const kBXExtensionTodayExtensionIdentifier = @"renren.BXiOSExtensionD
 NSString * const kBXTodayHideUserdefaultsIdentifier = @"TodayExtensionHide";
 NSString * const kBXTodayMessageUserdefaultsIdentifier = @"messageTextField";
 NSString * const kBXFileManagerPath = @"Library/Caches/BXExtension";
+NSString * const kBXFileManagerImagePath = @"Library/Caches/BXExtensionImage";
+
+//requestb.in申请临时账号;
+NSString * const kImageLoadUrl = @"http://requestb.in/11f02lm1";//http://requestb.in/11f02lm1?inspect
+NSString * const kBackgroundSessionConfigIdentifier = @"com.renren.BXShareExtension.BackgroundSessionConfig";
 
 @implementation BXExtensionSystemMessage
 

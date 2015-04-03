@@ -41,6 +41,22 @@
 		BCD1DCBF1ACD41EC0022F47C /* BXImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DCBE1ACD41EC0022F47C /* BXImageViewController.m */; };
 		BCD1DCC21ACD42030022F47C /* BXCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DCC11ACD42030022F47C /* BXCameraViewController.m */; };
 		BCD1DCC41ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1DCC31ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png */; };
+		BCD1DD061ACD6F100022F47C /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DD051ACD6F100022F47C /* ShareViewController.m */; };
+		BCD1DD081ACD6F100022F47C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD1DD071ACD6F100022F47C /* MainInterface.storyboard */; };
+		BCD1DD0B1ACD6F100022F47C /* BXShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCD1DD001ACD6F100022F47C /* BXShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCD1DD101ACD85590022F47C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD1DD0F1ACD85590022F47C /* MobileCoreServices.framework */; };
+		BCD1DD111ACD8BDE0022F47C /* ExtensionDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2183911ACA5F7600628F2A /* ExtensionDemoKit.framework */; };
+		BCD1DD1D1ACDA7F50022F47C /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DD1C1ACDA7F50022F47C /* ActionViewController.m */; };
+		BCD1DD1F1ACDA7F50022F47C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD1DD1E1ACDA7F50022F47C /* MainInterface.storyboard */; };
+		BCD1DD221ACDA7F50022F47C /* BXActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCD1DD171ACDA7F50022F47C /* BXActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCD1DD281ACDAAC50022F47C /* BXActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DD271ACDAAC50022F47C /* BXActionViewController.m */; };
+		BCD1DD2A1ACDAC820022F47C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD1DD291ACDAC820022F47C /* AVFoundation.framework */; };
+		BCD1DD311ACDB1290022F47C /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD1DD301ACDB1290022F47C /* PhotosUI.framework */; };
+		BCD1DD331ACDB1290022F47C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD1DD321ACDB1290022F47C /* Photos.framework */; };
+		BCD1DD391ACDB1290022F47C /* PhotoEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DD381ACDB1290022F47C /* PhotoEditingViewController.m */; };
+		BCD1DD3B1ACDB1290022F47C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD1DD3A1ACDB1290022F47C /* MainInterface.storyboard */; };
+		BCD1DD3E1ACDB1290022F47C /* BXPhotoEditingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCD1DD2F1ACDB1290022F47C /* BXPhotoEditingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCD1DD721ACDBF9C0022F47C /* BXImageProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1DD711ACDBF9C0022F47C /* BXImageProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +130,27 @@
 			remoteGlobalIDString = BCA4E63B1AC95D78007C1B71;
 			remoteInfo = TodayExtensionDemoKit;
 		};
+		BCD1DD091ACD6F100022F47C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA4E5D71AC46DE8007C1B71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD1DCFF1ACD6F100022F47C;
+			remoteInfo = BXShareExtension;
+		};
+		BCD1DD201ACDA7F50022F47C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA4E5D71AC46DE8007C1B71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD1DD161ACDA7F50022F47C;
+			remoteInfo = BXActionExtension;
+		};
+		BCD1DD3C1ACDB1290022F47C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA4E5D71AC46DE8007C1B71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD1DD2E1ACDB1290022F47C;
+			remoteInfo = BXPhotoEditingExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -123,7 +160,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				BCD1DD0B1ACD6F100022F47C /* BXShareExtension.appex in Embed App Extensions */,
 				BCA4E61A1AC46E01007C1B71 /* BXTodayExtension.appex in Embed App Extensions */,
+				BCD1DD3E1ACDB1290022F47C /* BXPhotoEditingExtension.appex in Embed App Extensions */,
+				BCD1DD221ACDA7F50022F47C /* BXActionExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +230,30 @@
 		BCD1DCC11ACD42030022F47C /* BXCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXCameraViewController.m; sourceTree = "<group>"; };
 		BCD1DCC31ACD4A860022F47C /* 屏幕快照 2015-04-02 17.58.57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2015-04-02 17.58.57.png"; sourceTree = "<group>"; };
 		BCD1DCC51ACD66D10022F47C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		BCD1DD001ACD6F100022F47C /* BXShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BXShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD1DD031ACD6F100022F47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD1DD041ACD6F100022F47C /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		BCD1DD051ACD6F100022F47C /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		BCD1DD071ACD6F100022F47C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		BCD1DD0F1ACD85590022F47C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BCD1DD121ACD8DE80022F47C /* BXShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BXShareExtension.entitlements; sourceTree = "<group>"; };
+		BCD1DD171ACDA7F50022F47C /* BXActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BXActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD1DD1A1ACDA7F50022F47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD1DD1B1ACDA7F50022F47C /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		BCD1DD1C1ACDA7F50022F47C /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		BCD1DD1E1ACDA7F50022F47C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		BCD1DD261ACDAAC50022F47C /* BXActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXActionViewController.h; sourceTree = "<group>"; };
+		BCD1DD271ACDAAC50022F47C /* BXActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXActionViewController.m; sourceTree = "<group>"; };
+		BCD1DD291ACDAC820022F47C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BCD1DD2F1ACDB1290022F47C /* BXPhotoEditingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BXPhotoEditingExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD1DD301ACDB1290022F47C /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		BCD1DD321ACDB1290022F47C /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		BCD1DD361ACDB1290022F47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD1DD371ACDB1290022F47C /* PhotoEditingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEditingViewController.h; sourceTree = "<group>"; };
+		BCD1DD381ACDB1290022F47C /* PhotoEditingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditingViewController.m; sourceTree = "<group>"; };
+		BCD1DD3A1ACDB1290022F47C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		BCD1DD701ACDBF9C0022F47C /* BXImageProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXImageProgress.h; sourceTree = "<group>"; };
+		BCD1DD711ACDBF9C0022F47C /* BXImageProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXImageProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +314,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCD1DCFD1ACD6F100022F47C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD111ACD8BDE0022F47C /* ExtensionDemoKit.framework in Frameworks */,
+				BCD1DD101ACD85590022F47C /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD1DD141ACDA7F50022F47C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD2A1ACDAC820022F47C /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD1DD2C1ACDB1290022F47C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD311ACDB1290022F47C /* PhotosUI.framework in Frameworks */,
+				BCD1DD331ACDB1290022F47C /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -301,6 +391,9 @@
 				BCA4E64C1AC95D79007C1B71 /* TodayExtensionDemoKitTests */,
 				BC2183921ACA5F7600628F2A /* ExtensionDemoKit */,
 				BC2183A11ACA5F7600628F2A /* ExtensionDemoKitTests */,
+				BCD1DD011ACD6F100022F47C /* BXShareExtension */,
+				BCD1DD181ACDA7F50022F47C /* BXActionExtension */,
+				BCD1DD341ACDB1290022F47C /* BXPhotoEditingExtension */,
 				BCA4E60D1AC46E01007C1B71 /* Frameworks */,
 				BCA4E5E01AC46DE8007C1B71 /* Products */,
 			);
@@ -316,6 +409,9 @@
 				BCA4E6461AC95D79007C1B71 /* TodayExtensionDemoKitTests.xctest */,
 				BC2183911ACA5F7600628F2A /* ExtensionDemoKit.framework */,
 				BC21839B1ACA5F7600628F2A /* ExtensionDemoKitTests.xctest */,
+				BCD1DD001ACD6F100022F47C /* BXShareExtension.appex */,
+				BCD1DD171ACDA7F50022F47C /* BXActionExtension.appex */,
+				BCD1DD2F1ACDB1290022F47C /* BXPhotoEditingExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -335,6 +431,8 @@
 				BCD1DCBE1ACD41EC0022F47C /* BXImageViewController.m */,
 				BCD1DCC01ACD42030022F47C /* BXCameraViewController.h */,
 				BCD1DCC11ACD42030022F47C /* BXCameraViewController.m */,
+				BCD1DD261ACDAAC50022F47C /* BXActionViewController.h */,
+				BCD1DD271ACDAAC50022F47C /* BXActionViewController.m */,
 				BCA4E5EC1AC46DE8007C1B71 /* Main.storyboard */,
 				BCA4E5EF1AC46DE8007C1B71 /* Images.xcassets */,
 				BCA4E5F11AC46DE8007C1B71 /* LaunchScreen.xib */,
@@ -372,8 +470,12 @@
 		BCA4E60D1AC46E01007C1B71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCD1DD291ACDAC820022F47C /* AVFoundation.framework */,
+				BCD1DD0F1ACD85590022F47C /* MobileCoreServices.framework */,
 				BCD1DCC51ACD66D10022F47C /* libsqlite3.0.dylib */,
 				BCA4E60E1AC46E01007C1B71 /* NotificationCenter.framework */,
+				BCD1DD301ACDB1290022F47C /* PhotosUI.framework */,
+				BCD1DD321ACDB1290022F47C /* Photos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -430,6 +532,66 @@
 			isa = PBXGroup;
 			children = (
 				BCA4E64E1AC95D79007C1B71 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCD1DD011ACD6F100022F47C /* BXShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BCD1DD121ACD8DE80022F47C /* BXShareExtension.entitlements */,
+				BCD1DD041ACD6F100022F47C /* ShareViewController.h */,
+				BCD1DD051ACD6F100022F47C /* ShareViewController.m */,
+				BCD1DD071ACD6F100022F47C /* MainInterface.storyboard */,
+				BCD1DD021ACD6F100022F47C /* Supporting Files */,
+			);
+			path = BXShareExtension;
+			sourceTree = "<group>";
+		};
+		BCD1DD021ACD6F100022F47C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCD1DD031ACD6F100022F47C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCD1DD181ACDA7F50022F47C /* BXActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BCD1DD1B1ACDA7F50022F47C /* ActionViewController.h */,
+				BCD1DD1C1ACDA7F50022F47C /* ActionViewController.m */,
+				BCD1DD1E1ACDA7F50022F47C /* MainInterface.storyboard */,
+				BCD1DD191ACDA7F50022F47C /* Supporting Files */,
+			);
+			path = BXActionExtension;
+			sourceTree = "<group>";
+		};
+		BCD1DD191ACDA7F50022F47C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCD1DD1A1ACDA7F50022F47C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCD1DD341ACDB1290022F47C /* BXPhotoEditingExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BCD1DD371ACDB1290022F47C /* PhotoEditingViewController.h */,
+				BCD1DD381ACDB1290022F47C /* PhotoEditingViewController.m */,
+				BCD1DD701ACDBF9C0022F47C /* BXImageProgress.h */,
+				BCD1DD711ACDBF9C0022F47C /* BXImageProgress.m */,
+				BCD1DD3A1ACDB1290022F47C /* MainInterface.storyboard */,
+				BCD1DD351ACDB1290022F47C /* Supporting Files */,
+			);
+			path = BXPhotoEditingExtension;
+			sourceTree = "<group>";
+		};
+		BCD1DD351ACDB1290022F47C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCD1DD361ACDB1290022F47C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -512,6 +674,9 @@
 				BCA4E6191AC46E01007C1B71 /* PBXTargetDependency */,
 				BCA4E6521AC95D79007C1B71 /* PBXTargetDependency */,
 				BC2183A71ACA5F7600628F2A /* PBXTargetDependency */,
+				BCD1DD0A1ACD6F100022F47C /* PBXTargetDependency */,
+				BCD1DD211ACDA7F50022F47C /* PBXTargetDependency */,
+				BCD1DD3D1ACDB1290022F47C /* PBXTargetDependency */,
 			);
 			name = BXiOSExtensionDemo;
 			productName = BXiOSExtensionDemo;
@@ -592,6 +757,57 @@
 			productReference = BCA4E6461AC95D79007C1B71 /* TodayExtensionDemoKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BCD1DCFF1ACD6F100022F47C /* BXShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD1DD0C1ACD6F110022F47C /* Build configuration list for PBXNativeTarget "BXShareExtension" */;
+			buildPhases = (
+				BCD1DCFC1ACD6F100022F47C /* Sources */,
+				BCD1DCFD1ACD6F100022F47C /* Frameworks */,
+				BCD1DCFE1ACD6F100022F47C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BXShareExtension;
+			productName = BXShareExtension;
+			productReference = BCD1DD001ACD6F100022F47C /* BXShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BCD1DD161ACDA7F50022F47C /* BXActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD1DD231ACDA7F60022F47C /* Build configuration list for PBXNativeTarget "BXActionExtension" */;
+			buildPhases = (
+				BCD1DD131ACDA7F50022F47C /* Sources */,
+				BCD1DD141ACDA7F50022F47C /* Frameworks */,
+				BCD1DD151ACDA7F50022F47C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BXActionExtension;
+			productName = BXActionExtension;
+			productReference = BCD1DD171ACDA7F50022F47C /* BXActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BCD1DD2E1ACDB1290022F47C /* BXPhotoEditingExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD1DD3F1ACDB12A0022F47C /* Build configuration list for PBXNativeTarget "BXPhotoEditingExtension" */;
+			buildPhases = (
+				BCD1DD2B1ACDB1290022F47C /* Sources */,
+				BCD1DD2C1ACDB1290022F47C /* Frameworks */,
+				BCD1DD2D1ACDB1290022F47C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BXPhotoEditingExtension;
+			productName = BXPhotoEditingExtension;
+			productReference = BCD1DD2F1ACDB1290022F47C /* BXPhotoEditingExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -640,6 +856,23 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = BCA4E5DE1AC46DE8007C1B71;
 					};
+					BCD1DCFF1ACD6F100022F47C = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TBMTVZDR9B;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					BCD1DD161ACDA7F50022F47C = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TBMTVZDR9B;
+					};
+					BCD1DD2E1ACDB1290022F47C = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TBMTVZDR9B;
+					};
 				};
 			};
 			buildConfigurationList = BCA4E5DA1AC46DE8007C1B71 /* Build configuration list for PBXProject "BXiOSExtensionDemo" */;
@@ -662,6 +895,9 @@
 				BCA4E6451AC95D79007C1B71 /* TodayExtensionDemoKitTests */,
 				BC2183901ACA5F7600628F2A /* ExtensionDemoKit */,
 				BC21839A1ACA5F7600628F2A /* ExtensionDemoKitTests */,
+				BCD1DCFF1ACD6F100022F47C /* BXShareExtension */,
+				BCD1DD161ACDA7F50022F47C /* BXActionExtension */,
+				BCD1DD2E1ACDB1290022F47C /* BXPhotoEditingExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -721,6 +957,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCD1DCFE1ACD6F100022F47C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD081ACD6F100022F47C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD1DD151ACDA7F50022F47C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD1F1ACDA7F50022F47C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD1DD2D1ACDB1290022F47C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD3B1ACDB1290022F47C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -745,6 +1005,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD1DD281ACDAAC50022F47C /* BXActionViewController.m in Sources */,
 				BCD1DCBF1ACD41EC0022F47C /* BXImageViewController.m in Sources */,
 				BCD1DCC21ACD42030022F47C /* BXCameraViewController.m in Sources */,
 				BCA4E5EB1AC46DE8007C1B71 /* ViewController.m in Sources */,
@@ -783,6 +1044,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCA4E6501AC95D79007C1B71 /* TodayExtensionDemoKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD1DCFC1ACD6F100022F47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD061ACD6F100022F47C /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD1DD131ACDA7F50022F47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD1D1ACDA7F50022F47C /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD1DD2B1ACDB1290022F47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1DD721ACDBF9C0022F47C /* BXImageProgress.m in Sources */,
+				BCD1DD391ACDB1290022F47C /* PhotoEditingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,6 +1124,21 @@
 			isa = PBXTargetDependency;
 			target = BCA4E63B1AC95D78007C1B71 /* TodayExtensionDemoKit */;
 			targetProxy = BCA4E65D1AC95E7C007C1B71 /* PBXContainerItemProxy */;
+		};
+		BCD1DD0A1ACD6F100022F47C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD1DCFF1ACD6F100022F47C /* BXShareExtension */;
+			targetProxy = BCD1DD091ACD6F100022F47C /* PBXContainerItemProxy */;
+		};
+		BCD1DD211ACDA7F50022F47C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD1DD161ACDA7F50022F47C /* BXActionExtension */;
+			targetProxy = BCD1DD201ACDA7F50022F47C /* PBXContainerItemProxy */;
+		};
+		BCD1DD3D1ACDB1290022F47C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD1DD2E1ACDB1290022F47C /* BXPhotoEditingExtension */;
+			targetProxy = BCD1DD3C1ACDB1290022F47C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1191,6 +1492,96 @@
 			};
 			name = Release;
 		};
+		BCD1DD0D1ACD6F110022F47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BXShareExtension/BXShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BXShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCD1DD0E1ACD6F110022F47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BXShareExtension/BXShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BXShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCD1DD241ACDA7F60022F47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BXActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCD1DD251ACDA7F60022F47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BXActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCD1DD401ACDB12A0022F47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BXPhotoEditingExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCD1DD411ACDB12A0022F47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = BXPhotoEditingExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1265,6 +1656,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BCD1DD0C1ACD6F110022F47C /* Build configuration list for PBXNativeTarget "BXShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD1DD0D1ACD6F110022F47C /* Debug */,
+				BCD1DD0E1ACD6F110022F47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCD1DD231ACDA7F60022F47C /* Build configuration list for PBXNativeTarget "BXActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD1DD241ACDA7F60022F47C /* Debug */,
+				BCD1DD251ACDA7F60022F47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCD1DD3F1ACDB12A0022F47C /* Build configuration list for PBXNativeTarget "BXPhotoEditingExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD1DD401ACDB12A0022F47C /* Debug */,
+				BCD1DD411ACDB12A0022F47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

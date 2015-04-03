@@ -26,11 +26,11 @@
             </objects>
             <point key="canvasLocation" x="-619" y="601"/>
         </scene>
-        <!--Item-->
+        <!--主页-->
         <scene sceneID="wab-8P-Fsw">
             <objects>
                 <navigationController id="ZKG-4d-3PU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Y04-bL-bXV"/>
+                    <tabBarItem key="tabBarItem" title="主页" id="Y04-bL-bXV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lzn-gj-r2A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avh-Bj-tro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="439"/>
+            <point key="canvasLocation" x="331" y="442"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="RrC-Cg-64M">
@@ -182,6 +182,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="c8C-1X-c30"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="YBb-3d-IMv" id="gJm-ey-Wdr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZe-5d-tZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,18 +230,79 @@
                             <constraint firstItem="3S9-Ii-PO4" firstAttribute="leading" secondItem="vvE-ju-jBb" secondAttribute="leading" constant="16" id="x2Q-jh-ncB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iOp-dS-06I"/>
+                    <navigationItem key="navigationItem" id="iOp-dS-06I">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Fhp-cY-X4O">
+                            <connections>
+                                <segue destination="CWW-3y-82l" kind="show" id="fci-gQ-rdI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIZ-LS-Wkp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="338" y="1766"/>
         </scene>
-        <!--Item-->
+        <!--Action View Controller-->
+        <scene sceneID="5ec-33-GYo">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="CWW-3y-82l" customClass="BXActionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nPY-2h-12t"/>
+                        <viewControllerLayoutGuide type="bottom" id="6CZ-EF-WyZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="11h-K5-AHD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="test  action  extension." translatesAutoresizingMaskIntoConstraints="NO" id="vBG-01-RYX">
+                                <rect key="frame" x="0.0" y="64" width="320" height="200"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.79215686269999996" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Egf-ay-r4b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8U-N9-3Gx">
+                                <rect key="frame" x="0.0" y="445" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Qs5-OI-tw6"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="action" id="9uB-Vp-hFL">
+                                        <connections>
+                                            <action selector="didClickShareButtonAction:" destination="CWW-3y-82l" id="uy6-FB-zFb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vBG-01-RYX" firstAttribute="top" secondItem="nPY-2h-12t" secondAttribute="bottom" id="9dJ-Wa-XbI"/>
+                            <constraint firstAttribute="trailing" secondItem="o8U-N9-3Gx" secondAttribute="trailing" id="Ivs-p5-IEj"/>
+                            <constraint firstItem="o8U-N9-3Gx" firstAttribute="leading" secondItem="11h-K5-AHD" secondAttribute="leading" id="LJ0-YZ-lVz"/>
+                            <constraint firstItem="vBG-01-RYX" firstAttribute="leading" secondItem="11h-K5-AHD" secondAttribute="leading" id="NvL-7E-uXC"/>
+                            <constraint firstAttribute="trailing" secondItem="vBG-01-RYX" secondAttribute="trailing" id="Qwf-kV-V38"/>
+                            <constraint firstAttribute="bottom" secondItem="o8U-N9-3Gx" secondAttribute="bottom" id="XCj-s4-T0F"/>
+                        </constraints>
+                    </view>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="textView" destination="vBG-01-RYX" id="eXX-qf-ki4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqY-hW-qEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="1766"/>
+        </scene>
+        <!--天气-->
         <scene sceneID="CfN-dC-y5R">
             <objects>
                 <navigationController id="JkK-NM-lo7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ioo-Ku-ypo"/>
+                    <tabBarItem key="tabBarItem" title="天气" id="Ioo-Ku-ypo"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="V9U-ei-2Sq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -252,11 +316,11 @@
             </objects>
             <point key="canvasLocation" x="-64" y="531"/>
         </scene>
-        <!--Item-->
+        <!--相机-->
         <scene sceneID="yWw-Uw-68y">
             <objects>
                 <navigationController id="Adg-oT-CNu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nZX-5k-Rqh"/>
+                    <tabBarItem key="tabBarItem" title="相机" id="nZX-5k-Rqh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hO5-OC-o97">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -268,13 +332,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgB-UM-kNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="1653"/>
+            <point key="canvasLocation" x="-40" y="1823"/>
         </scene>
-        <!--Item-->
+        <!--照片-->
         <scene sceneID="fKL-3o-7ub">
             <objects>
                 <navigationController id="bJo-K0-sO3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jvf-2m-oXS"/>
+                    <tabBarItem key="tabBarItem" title="照片" id="jvf-2m-oXS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fHV-JY-qfL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

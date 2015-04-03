@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BXExtensionSystemMessage.h"
+#import <UIKit/UIKit.h>
 
 @interface BXSharedUserDefaultsManager : NSObject
 
@@ -23,5 +24,8 @@
 
 - (void)saveMessageByFileManagerWithString:(NSString *)messageString;
 - (NSString *)readMessageFromFileManager;
+- (void)saveMessageByFileManagerWithImage:(UIImage *)image;
+- (UIImage *)readImageFromFileManager;
+
 
 @end
